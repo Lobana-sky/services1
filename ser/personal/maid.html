@@ -96,11 +96,11 @@
 									<legend>Personal information:</legend>
 									<div class="col-lg-4 form-group">
 										<div class="mt-10">
-												<label for="fname">Full name-name-الاسم</label>
+												<label for="fname">Full name-name-<br>الاسم</label>
 												<input id="fname" name="fname" placeholder="Enter your full name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your full name'" class="single-input" required="" type="text">
 										</div>
 										<div class="mt-10">
-												<label for="birth">Birthdate-Tanggal lahir-تاريخ الميلاد</label>
+												<label for="birth">Birthdate-Tanggal lahir-<br>تاريخ الميلاد</label>
 												<input id="birth" name="birth" placeholder="Enter your Office Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="single-input" required="" type="date">
 										</div>
 										<!-- <div class="mt-10">
@@ -108,15 +108,27 @@
 												<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
 										</div> -->
 										<div class="mt-10">
-												<label for="religion">Religion-Agama-الديانة</label>
-												<input name="religion" id="religion" placeholder="" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="text">
-										</div>
+											<label for="nationality">place of birth-tempat Lahir-<br>محل الولادة</label>
+												<div class="input-group-icon">
+													<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
+													<div class="form-select" id="default-select">
+														<select name="nationality" id="nationality">
+															<option value="1">City</option>
+															<option value="1">Dhaka</option>
+															<option value="1">Dilli</option>
+															<option value="1">Newyork</option>
+															<option value="1">Islamabad</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										
 									</div>
 
 
 									<div class="col-lg-4 form-group">
 										<div class="mt-10">
-									<label for="nationality">Nationality-Kebangsaan-الجنسية</label>
+									<label for="nationality">Nationality-Kebangsaan-<br>الجنسية</label>
 										<div class="input-group-icon">
 											<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
 											<div class="form-select" id="default-select">
@@ -131,12 +143,12 @@
 										</div>
 									</div>
 									<div class="mt-10">
-										<label for="religion">Religion-Agama-الديانة</label>
+										<label for="religion">Social status-Status sosial-<br>الحالة الاجتماعية</label>
 										<input name="religion" id="religion" placeholder="" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="text">
 								</div>
 								<div class="mt-10">
-									<label for="religion">Religion-Agama-الديانة</label>
-									<input name="religion" id="religion" placeholder="" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="text">
+									<label for="religion">No of child-jumlah anak-<br>عدد الأطفال</label>
+									<input name="religion" id="religion" placeholder="" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number">
 							</div>
 									</div>
 
@@ -145,9 +157,13 @@
 										align-items:left;
 										justify-content: center;
 										flex-direction: column;">
-										<img id="blah" src="https://via.placeholder.com/150x200" height="200" width="150" class="mb-3"  />
+										<img id="blah" src="https://via.placeholder.com/150x200" height="170" width="150" class="mb-1"  />
 										<input type='file' onchange="readURL(this);" style="padding-left: 0;"/>
-									    </div>
+										</div>
+										<div class="mt-10">
+											<label for="religion">Religion-Agama-<br>الديانة</label>
+											<input name="religion" id="religion" placeholder="" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="text">
+									</div>
 									</div>
 								</div>
 
@@ -155,20 +171,26 @@
 									<legend>Passport Details:</legend>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="zip">Passport NO-Nomor paspor-رقم الجواز</label>
+											<label for="zip">Passport No-Nomor paspor-<br>رقم الجواز</label>
 											<input name="zip" id="zip" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number" maxlength="5">
 									    </div>
 									</div>
 									<div class="form-group col-lg-3">
-									  
 										<div class="mt-10">
-											<label for="birth">Birthdate-Tanggal lahir-تاريخ الميلاد</label>
+											<label for="birth">Issue Date-Tanggal rilis-<br>تاريخ الصدور</label>
 											<input id="birth" name="birth" placeholder="Enter your Office Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="single-input" required="" type="date">
 									</div>
 									</div>
 									<div class="form-group col-lg-3">
+									  
 										<div class="mt-10">
-											<label for="nationality">Nationality-Kebangsaan-الجنسية</label>
+											<label for="birth">Expiry date-Tanggal kadaluarsa-<br>تاريخ الانتهاء</label>
+											<input id="birth" name="birth" placeholder="Enter your Office Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="single-input form-select" required="" type="date">
+									</div>
+									</div>
+									<div class="form-group col-lg-3">
+										<div class="mt-10">
+											<label for="nationality">Issue Place-tempat masalah-<br>مكان الصدور</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
@@ -183,12 +205,7 @@
 												</div>
 											</div>
 									</div>
-									<div class="form-group col-lg-3">
-										<div class="mt-10">
-											<label for="birth">Birthdate-Tanggal lahir-تاريخ الميلاد</label>
-											<input id="birth" name="birth" placeholder="Enter your Office Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="single-input" required="" type="date">
-									</div>
-									</div>
+									
 								  </div>
 
 
@@ -316,7 +333,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     $('#blah')
                         .attr('src', e.target.result)
                         .width(150)
-                        .height(200);
+                        .height(170);
                 };
 
                 reader.readAsDataURL(input.files[0]);
