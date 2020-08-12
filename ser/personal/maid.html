@@ -93,13 +93,13 @@
 							<form class="text-left" id="myForm" action="mail.php" method="post">
 								<h3 class="mb-30">Application for Employment House Maid</h3>
 								<div class="row">
-									<legend>Personal information:</legend>
+									<legend style="color:thistle">Personal information:</legend>
 									<div class="col-lg-4 form-group">
 										<div class="mt-10">
-												<label for="fname">Full name-name-<br>الاسم</label>
+												<label for="fname">Full name-Nama Lengkap-<br>الاسم</label>
 												<input id="fname" name="fname" placeholder="Enter your full name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your full name'" class="single-input" required="" type="text">
 										</div>
-										<div class="mt-10">
+										<div class="mt-15">
 												<label for="birth">Birthdate-Tanggal lahir-<br>تاريخ الميلاد</label>
 												<input id="birth" name="birth" placeholder="Enter your Office Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="single-input" required="" type="date">
 										</div>
@@ -107,7 +107,7 @@
 												<label for="name">Do you like cheese?</label>
 												<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
 										</div> -->
-										<div class="mt-10">
+										<div class="mt-15">
 											<label for="nationality">place of birth-tempat Lahir-<br>محل الولادة</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
@@ -122,13 +122,14 @@
 													</div>
 												</div>
 											</div>
-										
 									</div>
 
 
 									<div class="col-lg-4 form-group">
+									<div class="col-lg-12 form-group">
+
 										<div class="mt-10">
-									<label for="nationality">Nationality-Kebangsaan-<br>الجنسية</label>
+									    <label for="nationality">Nationality-Kebangsaan-<br>الجنسية</label>
 										<div class="input-group-icon">
 											<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
 											<div class="form-select" id="default-select">
@@ -142,14 +143,39 @@
 											</div>
 										</div>
 									</div>
-									<div class="mt-10">
-										<label for="religion">Social status-Status sosial-<br>الحالة الاجتماعية</label>
-										<input name="religion" id="religion" placeholder="" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="text">
-								</div>
+									</div>
+									<div class="col-lg-12 form-group">
+
 								<div class="mt-10">
-									<label for="religion">No of child-jumlah anak-<br>عدد الأطفال</label>
+									<label for="residence">Residence Place-Tempat Tinggal-<br>مكان الاقامة</label>
+									<div class="input-group-icon">
+										<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
+										<div class="form-select" id="default-select">
+											<select name="residence" id="residence">
+												<option value="1">Country</option>
+												<option value="1">Bangladesh</option>
+												<option value="1">India</option>
+												<option value="1">England</option>
+												<option value="1">Srilanka</option>
+											</select>
+										</div>
+									</div>
+								</div>
+									</div>
+									<div class="col-lg-12 form-group">
+									<div class="row mt-10">
+										<div class="col-lg-6 form-group">
+										<label for="religion">Social status-Status sosial-الحالة الاجتماعية</label>
+										<input name="religion" id="religion" placeholder="" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="text">
+									</div>
+									<div class="col-lg-6 form-group">
+
+										<label for="religion">No of child-jumlah anak-عدد الأطفال</label>
 									<input name="religion" id="religion" placeholder="" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number">
-							</div>
+								    </div>
+
+									</div>
+								</div>
 									</div>
 
 									<div class="col-lg-4 form-group">
@@ -157,22 +183,69 @@
 										align-items:left;
 										justify-content: center;
 										flex-direction: column;">
-										<img id="blah" src="https://via.placeholder.com/150x200" height="170" width="150" class="mb-1"  />
+										<img id="blah" src="https://via.placeholder.com/150x200" height="170" width="150" class="mb-3"  />
 										<input type='file' onchange="readURL(this);" style="padding-left: 0;"/>
 										</div>
-										<div class="mt-10">
+										<div class="mt-15">
 											<label for="religion">Religion-Agama-<br>الديانة</label>
 											<input name="religion" id="religion" placeholder="" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="text">
 									</div>
 									</div>
 								</div>
 
+
 								<div class="row">
-									<legend>Passport Details:</legend>
+
+									<div class="form-group col-lg-3">
+									  
+										<div class="mt-10">
+											<label for="zip">Telephone-Telepon-<br>رقم الهاتف</label>
+											<input name="zip" id="zip" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number">
+									    </div>
+									</div>
+									<div class="form-group col-lg-3">
+										<div class="mt-10">
+											<label for="Education">Education-pendidikan-<br>التعليم</label>
+												<div class="input-group-icon">
+													<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
+													<div class="form-select" id="default-select">
+														<select name="Education" id="Education">
+															<option value="1">Elementary</option>
+															<option value="1">Postgraduated</option>
+															<option value="1">Graduated</option>
+														</select>
+													</div>
+												</div>
+											</div>
+									</div>
+									<div class="form-group col-lg-2">
+										<div class="mt-10">
+											<label for="zip">Age-usia-<br>العمر</label>
+											<input name="zip" id="zip" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number">
+									    </div>
+									</div>
+									
+									<div class="form-group col-lg-2">
+										<div class="mt-10">
+											<label for="height">Height-Panjangnya-<br>الطول</label>
+											<input name="height" id="height" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number">
+									    </div>
+									</div>
+
+									<div class="form-group col-lg-2">
+										<div class="mt-10">
+											<label for="weight">Weight-bobot-<br>الوزن</label>
+											<input name="weight" id="weight" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter weight'" class="single-input" required="" type="number">
+									    </div>
+									</div>
+								  </div>
+
+								<div class="row">
+									<legend style="color:thistle">Passport Details:</legend>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
 											<label for="zip">Passport No-Nomor paspor-<br>رقم الجواز</label>
-											<input name="zip" id="zip" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number" maxlength="5">
+											<input name="zip" id="zip" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number">
 									    </div>
 									</div>
 									<div class="form-group col-lg-3">
@@ -210,7 +283,7 @@
 
 
 								  <div class="row">
-									<legend>Passport Details:</legend>
+									<legend style="color:thistle">Passport Details:</legend>
 									<div class="form-group col-lg-3">
 									  
 										<div class="mt-10">
@@ -249,14 +322,14 @@
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
 											<label for="zip">ZIP</label>
-											<input name="zip" id="zip" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number" maxlength="5">
+											<input name="zip" id="zip" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number">
 									    </div>
 									</div>
 									
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
 											<label for="zip">ZIP</label>
-											<input name="zip" id="zip" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number" maxlength="5">
+											<input name="zip" id="zip" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number">
 									    </div>
 									</div>
 								  </div>
