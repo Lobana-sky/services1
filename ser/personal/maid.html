@@ -108,11 +108,11 @@
 												<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
 										</div> -->
 										<div class="mt-15">
-											<label for="nationality">place of birth-tempat Lahir-<br>محل الولادة</label>
+											<label for="birthPlace">place of birth-tempat Lahir-<br>محل الولادة</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
-														<select name="nationality" id="nationality">
+														<select name="birthPlace" id="birthPlace">
 															<option value="1">City</option>
 															<option value="1">Dhaka</option>
 															<option value="1">Dilli</option>
@@ -165,11 +165,11 @@
 									<div class="col-lg-12 form-group">
 									<div class="row mt-10">
 										<div class="col-lg-6 form-group">
-										<label for="religion">Social status-Status sosial-الحالة الاجتماعية</label>
+										<label for="socialst">Social status-Status sosial-الحالة الاجتماعية</label>
 										<div class="input-group-icon">
 											<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 											<div class="form-select" id="default-select">
-												<select name="residence" id="residence">
+												<select name="socialst" id="socialst">
 													<option value="1">married</option>
 													<option value="1">devorse</option>
 													<option value="1">single</option>
@@ -179,8 +179,8 @@
 									</div>
 									<div class="col-lg-6 form-group">
 
-										<label for="religion">No of child-jumlah anak-عدد الأطفال</label>
-									<input name="religion" id="religion" placeholder="" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number">
+										<label for="nochild">No of child-jumlah anak-عدد الأطفال</label>
+									<input name="nochild" id="nochild" placeholder="" onfocus="this.placeholder = ''" class="single-input" required="" type="number">
 								    </div>
 
 									</div>
@@ -197,7 +197,7 @@
 										</div>
 										<div class="mt-15">
 											<label for="religion">Religion-Agama-<br>الديانة</label>
-											<input name="religion" id="religion" placeholder="" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="text">
+											<input name="religion" id="religion" placeholder="" onfocus="this.placeholder = ''" class="single-input" required="" type="text">
 									</div>
 									</div>
 								</div>
@@ -211,11 +211,11 @@
 									</div>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="Education">Education-pendidikan-<br>التعليم</label>
+											<label for="education">Education-pendidikan-<br>التعليم</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
-														<select name="Education" id="Education">
+														<select name="education" id="education">
 															<option value="1">Elementary</option>
 															<option value="1">Postgraduated</option>
 															<option value="1">Graduated</option>
@@ -226,22 +226,22 @@
 									</div>
 									<div class="form-group col-lg-2">
 										<div class="mt-10">
-											<label for="zip">Age-usia-<br>العمر</label>
-											<input name="zip" id="zip" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number">
+											<label for="age">Age-usia-<br>العمر</label>
+											<input name="age" id="age" placeholder="How old are you?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'How old are you?'" class="single-input" required="" type="number">
 									    </div>
 									</div>
 									
 									<div class="form-group col-lg-2">
 										<div class="mt-10">
 											<label for="height">Height-Panjangnya-<br>الطول</label>
-											<input name="height" id="height" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number">
+											<input name="height" id="height" placeholder="height" onfocus="this.placeholder = ''" class="single-input" required="" type="number">
 									    </div>
 									</div>
 
 									<div class="form-group col-lg-2">
 										<div class="mt-10">
 											<label for="weight">Weight-bobot-<br>الوزن</label>
-											<input name="weight" id="weight" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter weight'" class="single-input" required="" type="number">
+											<input name="weight" id="weight" placeholder="weight" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter weight'" class="single-input" required="" type="number">
 									    </div>
 									</div>
 								  </div>
@@ -250,30 +250,30 @@
 									<legend style="color:thistle">Passport Details:</legend>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="zip">Passport No-Nomor paspor-<br>رقم الجواز</label>
-											<input name="zip" id="zip" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number">
+											<label for="Passportno">Passport No-Nomor paspor-<br>رقم الجواز</label>
+											<input name="Passportno" id="Passportno" placeholder="" onfocus="this.placeholder = ''" class="single-input" required="" type="number">
 									    </div>
 									</div>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="birth">Issue Date-Tanggal rilis-<br>تاريخ الصدور</label>
-											<input id="birth" name="birth" placeholder="Enter your Office Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="single-input" required="" type="date">
+											<label for="issueDate">Issue Date-Tanggal rilis-<br>تاريخ الصدور</label>
+											<input id="issueDate" name="issueDate"  onfocus="this.placeholder = ''" class="single-input" required="" type="date">
 									</div>
 									</div>
 									<div class="form-group col-lg-3">
 									  
 										<div class="mt-10">
-											<label for="birth">Expiry date-Tanggal kadaluarsa-<br>تاريخ الانتهاء</label>
-											<input id="birth" name="birth" placeholder="Enter your Office Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="single-input form-select" required="" type="date">
+											<label for="expiryDate">Expiry Date-Tanggal Kadaluarsa-<br>تاريخ الانتهاء</label>
+											<input id="expiryDate" name="expiryDate" onfocus="this.placeholder = ''" class="single-input form-select" required="" type="date">
 									</div>
 									</div>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="nationality">Issue Place-tempat masalah-<br>مكان الصدور</label>
+											<label for="issuePlace">Issue Place-Tempat Masalah-<br>مكان الصدور</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
-														<select name="nationality" id="nationality">
+														<select name="issuePlace" id="issuePlace">
 															<option value="1">City</option>
 															<option value="1">Dhaka</option>
 															<option value="1">Dilli</option>
@@ -293,11 +293,11 @@
 									<div class="form-group col-lg-4">
 									  
 										<div class="mt-10">
-											<label for="nationality">Native Language-Bahasa asli-<br>اللغة الأم</label>
+											<label for="nlang">Native Language-Bahasa asli-<br>اللغة الأم</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
-														<select name="nationality" id="nationality">
+														<select name="nlang" id="nlang">
 															<option value="1">Indonesia</option>
 															<option value="1">Spanish</option>
 															<option value="1">Arabic</option>
@@ -310,11 +310,11 @@
 									</div>
 									<div class="form-group col-lg-4">
 										<div class="mt-10">
-											<label for="nationality">English Language-Inggris-<br>الانكليزية</label>
+											<label for="englang">English Language-Inggris-<br>الانكليزية</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
-														<select name="nationality" id="nationality">
+														<select name="englang" id="englang">
 															<option value="1">poor</option>
 															<option value="1">fair</option>
 															<option value="1">excelent</option>
@@ -325,11 +325,11 @@
 									</div>
 									<div class="form-group col-lg-4">
 										<div class="mt-10">
-											<label for="nationality">Arabic Language-Arab-<br>العربية</label>
+											<label for="arablang">Arabic Language-Arab-<br>العربية</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
-														<select name="nationality" id="nationality">
+														<select name="arablang" id="arablang">
 															<option value="1">poor</option>
 															<option value="1">fair</option>
 															<option value="1">excelent</option>
@@ -345,11 +345,11 @@
 									<legend style="color:thistle">Services Skills</legend>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="nationality">Washing-Pencucian-<br>الغسيل</label>
+											<label for="wash">Washing-Pencucian-<br>الغسيل</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
-														<select name="nationality" id="nationality">
+														<select name="wash" id="wash">
 															<option value="1">poor</option>
 															<option value="1">fair</option>
 															<option value="1">excelent</option>
@@ -361,11 +361,11 @@
 									<div class="form-group col-lg-3">
 									  
 										<div class="mt-10">
-											<label for="nationality">Cleaning-Pembersihan-<br>التنظيف</label>
+											<label for="clean">Cleaning-Pembersihan-<br>التنظيف</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
-														<select name="nationality" id="nationality">
+														<select name="clean" id="clean">
 															<option value="1">poor</option>
 															<option value="1">fair</option>
 															<option value="1">excelent</option>
@@ -376,11 +376,11 @@
 									</div>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="nationality">Cooking-Memasak-<br>الطبخ</label>
+											<label for="cook">Cooking-Memasak-<br>الطبخ</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
-														<select name="nationality" id="nationality">
+														<select name="cook" id="cook">
 															<option value="1">poor</option>
 															<option value="1">fair</option>
 															<option value="1">excelent</option>
@@ -391,11 +391,11 @@
 									</div>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="nationality">Baby Sitting-Baby Sitting-<br>تربية الأطفال</label>
+											<label for="babySitting">Baby Sitting-Baby Sitting-<br>تربية الأطفال</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
-														<select name="nationality" id="nationality">
+														<select name="babySitting" id="babySitting">
 															<option value="1">poor</option>
 															<option value="1">fair</option>
 															<option value="1">excelent</option>
