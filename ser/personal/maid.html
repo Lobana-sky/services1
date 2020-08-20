@@ -15,7 +15,11 @@
 		<meta charset="UTF-8">
 		<!-- Site Title -->
 		<title>Personal</title>
-
+<style>
+	label{
+		font-size: 12px;
+	}
+</style>
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
 			CSS
@@ -95,41 +99,22 @@
 								<div class="row">
 									<legend style="color:thistle">Personal information:</legend>
 									<div class="col-lg-4 form-group">
-										<div class="mt-10">
-												<label for="fname">Full name-Nama Lengkap-<br>الاسم</label>
+										<div class="mt-30">
+												<label for="fname">Full name/Nama Lengkap/الاسم</label>
 												<input id="fname" name="fname" placeholder="Enter your full name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your full name'" class="single-input" required="" type="text">
 										</div>
-										<div class="mt-15">
-												<label for="birth">Birthdate-Tanggal lahir-<br>تاريخ الميلاد</label>
+										<div class="mt-30">
+												<label for="birth">Birthdate/Tanggal lahir/تاريخ الميلاد</label>
 												<input id="birth" name="birth" placeholder="Enter your Office Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="single-input" required="" type="date">
 										</div>
-										<!-- <div class="mt-10">
-												<label for="name">Do you like cheese?</label>
-												<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
-										</div> -->
-										<div class="mt-15">
-											<label for="birthPlace">place of birth-tempat Lahir-<br>محل الولادة</label>
-												<div class="input-group-icon">
-													<div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
-													<div class="form-select" id="default-select">
-														<select name="birthPlace" id="birthPlace">
-															<option value="1">City</option>
-															<option value="1">Dhaka</option>
-															<option value="1">Dilli</option>
-															<option value="1">Newyork</option>
-															<option value="1">Islamabad</option>
-														</select>
-													</div>
-												</div>
-											</div>
 									</div>
 
 
 									<div class="col-lg-4 form-group">
 									<div class="col-lg-12 form-group">
 
-										<div class="mt-10">
-									    <label for="nationality">Nationality-Kebangsaan-<br>الجنسية</label>
+										<div class="mt-30">
+									    <label for="nationality">Nationality/Kebangsaan/الجنسية</label>
 										<div class="input-group-icon">
 											<div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
 											<div class="form-select" id="default-select">
@@ -146,8 +131,8 @@
 									</div>
 									<div class="col-lg-12 form-group">
 
-								<div class="mt-10">
-									<label for="residence">Residence Place-Tempat Tinggal-<br>مكان الاقامة</label>
+								<div class="mt-30">
+									<label for="residence">Residence Place/Tempat Tinggal/مكان الاقامة</label>
 									<div class="input-group-icon">
 										<div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
 										<div class="form-select" id="default-select">
@@ -162,10 +147,47 @@
 									</div>
 								</div>
 									</div>
-									<div class="col-lg-12 form-group">
-									<div class="row mt-10">
-										<div class="col-lg-6 form-group">
-										<label for="socialst">Social status-Status sosial-الحالة الاجتماعية</label>
+									</div>
+
+									<div class="col-lg-4 form-group">
+										<div style="display: flex;
+										align-items:left;
+										justify-content: center;
+										flex-direction: column;">
+										<img id="blah" src="https://via.placeholder.com/150x150" height="150" width="150" class="mb-4"  />
+										<input type='file' onchange="readURL(this);" style="padding-left: 0;"/>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="form-group col-lg-3">
+										<div class="mt-10">
+											<label for="birthPlace">place of birth/tempat Lahir/محل الولادة</label>
+												<div class="input-group-icon">
+													<div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
+													<div class="form-select" id="default-select">
+														<select name="birthPlace" id="birthPlace">
+															<option value="1">City</option>
+															<option value="1">Dhaka</option>
+															<option value="1">Dilli</option>
+															<option value="1">Newyork</option>
+															<option value="1">Islamabad</option>
+														</select>
+													</div>
+												</div>
+											</div>
+									</div>
+									<div class="form-group col-lg-3">
+										<div class="mt-10">
+											<label for="nochild">Num child/jumlah anak/عدد الأطفال</label>
+									<input name="nochild" id="nochild" placeholder="" onfocus="this.placeholder = ''" class="single-input" required="" type="number">
+									</div>
+									</div>
+									<div class="form-group col-lg-3">
+									  
+										<div class="mt-10">
+											<label for="socialst">Social st/St sosial/الوضع الاجتماعي</label>
 										<div class="input-group-icon">
 											<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 											<div class="form-select" id="default-select">
@@ -177,41 +199,26 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-6 form-group">
-
-										<label for="nochild">No of child-jumlah anak-عدد الأطفال</label>
-									<input name="nochild" id="nochild" placeholder="" onfocus="this.placeholder = ''" class="single-input" required="" type="number">
-								    </div>
-
 									</div>
-								</div>
-									</div>
-
-									<div class="col-lg-4 form-group">
-										<div style="display: flex;
-										align-items:left;
-										justify-content: center;
-										flex-direction: column;">
-										<img id="blah" src="https://via.placeholder.com/150x200" height="170" width="150" class="mb-3"  />
-										<input type='file' onchange="readURL(this);" style="padding-left: 0;"/>
-										</div>
-										<div class="mt-15">
-											<label for="religion">Religion-Agama-<br>الديانة</label>
+									<div class="form-group col-lg-3">
+										<div class="mt-10">
+											<label for="religion">Religion/Agama/الديانة</label>
 											<input name="religion" id="religion" placeholder="" onfocus="this.placeholder = ''" class="single-input" required="" type="text">
+											</div>
 									</div>
-									</div>
-								</div>
+									
+								  </div>
 
 								<div class="row">
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="zip">Telephone-Telepon-<br>رقم الهاتف</label>
+											<label for="zip">Telephone/Telepon/رقم الهاتف</label>
 											<input name="zip" id="zip" placeholder="xxxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="single-input" required="" type="number">
 									    </div>
 									</div>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="education">Education-pendidikan-<br>التعليم</label>
+											<label for="education">Education/pendidikan/التعليم</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
@@ -226,21 +233,21 @@
 									</div>
 									<div class="form-group col-lg-2">
 										<div class="mt-10">
-											<label for="age">Age-usia-<br>العمر</label>
+											<label for="age">Age/usia/العمر</label>
 											<input name="age" id="age" placeholder="How old are you?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'How old are you?'" class="single-input" required="" type="number">
 									    </div>
 									</div>
 									
 									<div class="form-group col-lg-2">
 										<div class="mt-10">
-											<label for="height">Height-Panjangnya-<br>الطول</label>
+											<label for="height">Height/Panjangnya/الطول</label>
 											<input name="height" id="height" placeholder="height" onfocus="this.placeholder = ''" class="single-input" required="" type="number">
 									    </div>
 									</div>
 
 									<div class="form-group col-lg-2">
 										<div class="mt-10">
-											<label for="weight">Weight-bobot-<br>الوزن</label>
+											<label for="weight">Weight/bobot/الوزن</label>
 											<input name="weight" id="weight" placeholder="weight" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter weight'" class="single-input" required="" type="number">
 									    </div>
 									</div>
@@ -250,26 +257,26 @@
 									<legend style="color:thistle">Passport Details:</legend>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="Passportno">Passport No-Nomor paspor-<br>رقم الجواز</label>
+											<label for="Passportno">Passport No/Nomor paspor/رقم الجواز</label>
 											<input name="Passportno" id="Passportno" placeholder="" onfocus="this.placeholder = ''" class="single-input" required="" type="number">
 									    </div>
 									</div>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="issueDate">Issue Date-Tanggal rilis-<br>تاريخ الصدور</label>
+											<label for="issueDate">Issue Date/Tanggal rilis/تاريخ الصدور</label>
 											<input id="issueDate" name="issueDate"  onfocus="this.placeholder = ''" class="single-input" required="" type="date">
 									</div>
 									</div>
 									<div class="form-group col-lg-3">
 									  
 										<div class="mt-10">
-											<label for="expiryDate">Expiry Date-Tanggal Kadaluarsa-<br>تاريخ الانتهاء</label>
+											<label for="expiryDate">Expiry Date/Tanggal Kadaluarsa/تاريخ الانتهاء</label>
 											<input id="expiryDate" name="expiryDate" onfocus="this.placeholder = ''" class="single-input form-select" required="" type="date">
 									</div>
 									</div>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="issuePlace">Issue Place-Tempat Masalah-<br>مكان الصدور</label>
+											<label for="issuePlace">Issue Place/Tempat Masalah/مكان الصدور</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
@@ -293,7 +300,7 @@
 									<div class="form-group col-lg-4">
 									  
 										<div class="mt-10">
-											<label for="nlang">Native Language-Bahasa asli-<br>اللغة الأم</label>
+											<label for="nlang">Native Language/Bahasa asli/اللغة الأم</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
@@ -310,7 +317,7 @@
 									</div>
 									<div class="form-group col-lg-4">
 										<div class="mt-10">
-											<label for="englang">English Language-Inggris-<br>الانكليزية</label>
+											<label for="englang">English/Inggris/الانكليزية</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
@@ -325,7 +332,7 @@
 									</div>
 									<div class="form-group col-lg-4">
 										<div class="mt-10">
-											<label for="arablang">Arabic Language-Arab-<br>العربية</label>
+											<label for="arablang">Arabic/Arab/العربية</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
@@ -333,7 +340,7 @@
 															<option value="1">poor</option>
 															<option value="1">fair</option>
 															<option value="1">excelent</option>
-														</select>fa-globe
+														</select>
 													</div>
 												</div>
 											</div>
@@ -345,7 +352,7 @@
 									<legend style="color:thistle">Services Skills</legend>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="wash">Washing-Pencucian-<br>الغسيل</label>
+											<label for="wash">Washing/Pencucian/الغسيل</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
@@ -361,7 +368,7 @@
 									<div class="form-group col-lg-3">
 									  
 										<div class="mt-10">
-											<label for="clean">Cleaning-Pembersihan-<br>التنظيف</label>
+											<label for="clean">Cleaning/Pembersihan/التنظيف</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
@@ -376,7 +383,7 @@
 									</div>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="cook">Cooking-Memasak-<br>الطبخ</label>
+											<label for="cook">Cooking/Memasak/الطبخ</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
@@ -391,7 +398,7 @@
 									</div>
 									<div class="form-group col-lg-3">
 										<div class="mt-10">
-											<label for="babySitting">Baby Sitting-Baby Sitting-<br>تربية الأطفال</label>
+											<label for="babySitting">Baby Sitting/Baby Sitting/تربية الأطفال</label>
 												<div class="input-group-icon">
 													<div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
 													<div class="form-select" id="default-select">
@@ -477,7 +484,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     $('#blah')
                         .attr('src', e.target.result)
                         .width(150)
-                        .height(170);
+                        .height(150);
                 };
 
                 reader.readAsDataURL(input.files[0]);
